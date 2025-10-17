@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 1467246572}
   - component: {fileID: 1467246571}
   - component: {fileID: 1467246570}
+  - component: {fileID: 1467246573}
   m_Layer: 0
   m_Name: icono 1
   m_TagString: Untagged
@@ -903,7 +904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194227}
-  targetLibro: {fileID: 0}
+  targetLibro: {fileID: 2002379088}
   iconoActual: {fileID: 1467246569}
   iconoLibro: {fileID: 1894609076}
 --- !u!212 &1467246571
@@ -966,13 +967,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467246569}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.4760717, y: 0.51704574, z: -0.47226992, w: 0.53195924}
-  m_LocalPosition: {x: -20.1, y: 208, z: 243}
-  m_LocalScale: {x: 0.835912, y: 0.737217, z: 1}
+  m_LocalRotation: {x: 0.48784387, y: 0.53031194, z: -0.46009934, w: 0.5187352}
+  m_LocalPosition: {x: -20.1, y: 208.01, z: 242.7}
+  m_LocalScale: {x: 0.75101805, y: 0.66234636, z: 0.8984415}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 84.195, y: 83.164, z: -5.762}
+  m_LocalEulerAnglesHint: {x: 83.781, y: 110.788, z: 21.716}
+--- !u!135 &1467246573
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467246569}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.083637
+  m_Center: {x: -1.2076766e-10, y: -0.0000007163135, z: 0.24013247}
 --- !u!1001 &1475942221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1252,6 +1274,7 @@ GameObject:
   - component: {fileID: 1894609078}
   - component: {fileID: 1894609077}
   - component: {fileID: 1894609079}
+  - component: {fileID: 1894609080}
   m_Layer: 0
   m_Name: icono pasar pagina
   m_TagString: Untagged
@@ -1321,7 +1344,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: -19.1, y: 207.3, z: 244.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8798, y: 0.8798, z: 0.8798}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1340,6 +1363,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconoLibro: {fileID: 1894609076}
   animLibro: {fileID: 2002379087}
+--- !u!135 &1894609080
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894609076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 3.4390104
+  m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
 --- !u!1 &1943811142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb7a9b5c0e4a4734285822ba47432c36, type: 3}
@@ -1490,6 +1534,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &2002379088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5208759819979056824, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+  m_PrefabInstance: {fileID: 1368345080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

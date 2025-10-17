@@ -15,22 +15,33 @@ public class IconoInicio : MonoBehaviour
         iconoLibro.SetActive(false);
     }
 
-    public void OnClickIcono()
+    public void OnMouseDown()
     {
-        // 1. Desactiva este ícono
-        iconoActual.SetActive(false);
+
+        Debug.Log("prueba");
+
 
         // 2. Activa el siguiente ícono
         iconoLibro.SetActive(true);
 
-        // 3. Mueve la cámara hacia el libro (seguimiento simple)
-        mainCamera.transform.position = new Vector3(
-            targetLibro.position.x,
-            targetLibro.position.y + 1.5f,
-            targetLibro.position.z - 2f
-        );
+        // 1. Desactiva este ícono
+        iconoActual.SetActive(false);
 
-        mainCamera.transform.LookAt(targetLibro);
+
+        // Nueva posición
+        mainCamera.transform.position = new Vector3(-13.3f, 253.5f, 254.3f);
+
+        // Nueva rotación (en ángulos Euler)
+        mainCamera.transform.rotation = Quaternion.Euler(78.34f, -147.327f, 123.95f);
+
+        // 3. Mueve la cámara hacia el libro (seguimiento simple)
+        //mainCamera.transform.position = new Vector3(
+          //  targetLibro.position.x + 2f,
+           // targetLibro.position.y + 1.5f,
+           //targetLibro.position.z + 2f
+        //);
+
+        //mainCamera.transform.LookAt(targetLibro);
     }
 }
 

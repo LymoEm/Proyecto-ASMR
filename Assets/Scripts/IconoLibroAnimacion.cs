@@ -7,15 +7,17 @@ public class IconoLibroAnimacion : MonoBehaviour
 
     void Start()
     {
-        iconoLibro.SetActive(false); // Está oculto hasta que lo active el script anterior
+       // iconoLibro.SetActive(false); // Está oculto hasta que lo active el script anterior
     }
 
-    public void OnClickAnimar()
+    public void OnMouseDown()
     {
         // Oculta el ícono
         iconoLibro.SetActive(false);
 
         // Reproduce la animación
         animLibro.SetTrigger("PlayAnim");
+
+        Debug.Log("prueba2");
     }
 }
