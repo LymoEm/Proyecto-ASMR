@@ -614,14 +614,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1985890467}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
-        m_MethodName: LoadScenes
+        m_MethodName: ChosenScenes
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: bienvenida
+          m_StringArgument: Escena picnic
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1649843937
@@ -747,14 +747,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1985890467}
         m_TargetAssemblyTypeName: ScenesManager, Assembly-CSharp
-        m_MethodName: LoadScenes
+        m_MethodName: ChosenScenes
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: bienvenida
+          m_StringArgument: Escena estudio
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1701154754

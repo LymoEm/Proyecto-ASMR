@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
-
-    public static string ChosenScene;
-    public void LoadScenes(string name)
+    //Para bienvenida
+    public void LoadSceneSelected()
     {
-        ChosenScene = name;
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene(ChosenScene.selected);
     }
+
+    //Para inicio
+    public void ChosenScenes(string name)
+    {
+        ChosenScene.selected = name;
+        SceneManager.LoadScene("bienvenida");
+    }
+
+
 }
