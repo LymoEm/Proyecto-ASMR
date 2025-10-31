@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class Icono1 : MonoBehaviour
 {
-    public Camera mainCamera;       //Main Camera desde el Inspector
+    public CameraMove cameraMove;
+
     public Transform target;   //Asigna el objeto del Hierarchy
     public GameObject iconoActual;  //Este mismo ícono (icono 1)
     public GameObject icono2;   //El ícono que aparecerá después
@@ -13,6 +14,12 @@ public class Icono1 : MonoBehaviour
         // Asegura que el ícono esté visible apenas inicia la escena
         iconoActual.SetActive(true);
         icono2.SetActive(false);
+
+    }
+
+    void Update()
+    {
+       
     }
 
     public void OnMouseDown()
@@ -20,11 +27,15 @@ public class Icono1 : MonoBehaviour
 
         Debug.Log("Bandera1");
 
-        //Desactiva este ícono
-        iconoActual.SetActive(false);
+        Debug.Log(target);
+
+        cameraMove.setZoom(target);
 
         //Activa el siguiente ícono
         icono2.SetActive(true);
+
+        //Desactiva este ícono
+        iconoActual.SetActive(false);
 
         // Nueva posición
         //mainCamera.transform.position = new Vector3(-13.3f, 253.5f, 254.3f);
@@ -38,8 +49,6 @@ public class Icono1 : MonoBehaviour
         // targetLibro.position.y + 1.5f,
         //targetLibro.position.z + 2f
         //);
-
-        mainCamera.transform.LookAt(target);
     }
 }
 
