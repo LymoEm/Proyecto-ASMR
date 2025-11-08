@@ -179,6 +179,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -5442666780130358338, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
   m_PrefabInstance: {fileID: 1368345080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &105748595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105748587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimation: anim regla
+  icono1: {fileID: 779965519}
+  cameraMove: {fileID: 963194229}
+  isAnimating: 0
+  startAnimation: 0
 --- !u!1 &159793970
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,32 +513,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -9003942578411028598, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
   m_PrefabInstance: {fileID: 1368345080}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &518562703 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cfa558f9ca4fb249bbb32dd0e7b8a10, type: 3}
-  m_PrefabInstance: {fileID: 808699684}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &518562707
-Animator:
-  serializedVersion: 5
+--- !u!114 &459522193
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518562703}
+  m_GameObject: {fileID: 459522187}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dce5890fd13103e47bcd9a4ab335f5a7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimation: anim lapiz
+  icono1: {fileID: 707604272}
+  cameraMove: {fileID: 963194229}
+  isAnimating: 0
+  startAnimation: 0
 --- !u!1 &601758433
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,9 +561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 459522193}
   icono2: {fileID: 601758433}
-  anim: {fileID: 459522189}
-  animationDefault: Default
 --- !u!135 &601758435
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1149,10 +1156,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5cfa558f9ca4fb249bbb32dd0e7b8a10, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 518562707}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cfa558f9ca4fb249bbb32dd0e7b8a10, type: 3}
 --- !u!1 &937537318
 GameObject:
@@ -1185,9 +1189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1612049303}
   icono2: {fileID: 937537318}
-  anim: {fileID: 1612049299}
-  animationDefault: Default
 --- !u!135 &937537320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1269,13 +1272,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937537318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6493941, y: 0.523518, z: 0.30660132, w: 0.4584886}
-  m_LocalPosition: {x: -11.84, y: 210.04, z: 210.03}
+  m_LocalRotation: {x: 0.08380403, y: 0.8299161, z: -0.110791706, w: 0.5403159}
+  m_LocalPosition: {x: -11.767022, y: 209.8648, z: 210.31657}
   m_LocalScale: {x: 0.46548903, y: 0.46548903, z: 0.46548903}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 15.93, y: 114.029, z: 91.873}
+  m_LocalEulerAnglesHint: {x: 15.93, y: 114.029, z: 1.155}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 10
   offset: {x: 5, y: 5, z: 5}
+  cameraReset: 0
 --- !u!1 &974712679
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,9 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 105748595}
   icono2: {fileID: 974712679}
-  anim: {fileID: 105748591}
-  animationDefault: Default
 --- !u!135 &974712681
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1622,15 +1625,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 459522189}
+    - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 459522193}
     - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002379087}
+    - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002379089}
     - targetCorrespondingSourceObject: {fileID: 1030030053618147308, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 105748591}
+    - targetCorrespondingSourceObject: {fileID: 1030030053618147308, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 105748595}
     - targetCorrespondingSourceObject: {fileID: -2741483655217225133, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612049299}
+    - targetCorrespondingSourceObject: {fileID: -2741483655217225133, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1612049303}
   m_SourcePrefab: {fileID: 100100000, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
 --- !u!1 &1467246569
 GameObject:
@@ -1956,6 +1971,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -684231756305202806, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
   m_PrefabInstance: {fileID: 1368345080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1612049303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612049295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimation: anim taza
+  icono1: {fileID: 177520146}
+  cameraMove: {fileID: 963194229}
+  isAnimating: 0
+  startAnimation: 0
 --- !u!1001 &1781474366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2162,9 +2194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2002379089}
   icono2: {fileID: 1894609076}
-  anim: {fileID: 2002379087}
-  animationDefault: Default
 --- !u!1 &1943811142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb7a9b5c0e4a4734285822ba47432c36, type: 3}
@@ -2320,6 +2351,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5208759819979056824, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
   m_PrefabInstance: {fileID: 1368345080}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2002379089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002379085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimation: anim libreta
+  icono1: {fileID: 1467246574}
+  cameraMove: {fileID: 963194229}
+  isAnimating: 0
+  startAnimation: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

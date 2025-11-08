@@ -1,34 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Icono2 : MonoBehaviour
 {
+    public AnimationManager anim;
     public GameObject icono2;  // Este ícono
-    public Animator anim;     // Animator del objeto
-    public string animationDefault = "Default";
-    AnimatorStateInfo infoAnim;
+
+    void Start()
+    {
+    }
 
     public void OnMouseDown()
     {
-        // Oculta el ícono
-        icono2.SetActive(false);
-
-        // Reproduce la animación
-        anim.SetTrigger("PlayAnim");
+        anim.startAnimation = true;
 
         Debug.Log("Bandera2");
 
-        infoAnim = anim.GetCurrentAnimatorStateInfo(0);
-        if (infoAnim.IsName(animationDefault))
-        {
-            restartCameraPosition();
-
-        }
+        icono2.SetActive(false);
 
     }
-
-    public void restartCameraPosition()
-    {
-
-
-    }
+  
 }
