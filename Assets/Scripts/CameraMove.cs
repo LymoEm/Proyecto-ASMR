@@ -19,7 +19,7 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = new(target.localScale - 35, 20f, 7f);
+        offset = new(-35f, 20f, 7f);
         startPosition = transform.position;
         startRotation = transform.rotation;
     }
