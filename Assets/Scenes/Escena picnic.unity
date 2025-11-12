@@ -460,6 +460,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: elem picnic
       objectReference: {fileID: 0}
+    - target: {fileID: 1397873840579565944, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2734
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397873840579565944, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0104
+      objectReference: {fileID: 0}
+    - target: {fileID: 1397873840579565944, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0076
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429846925522644548, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c52ce5bf1e57b1143be6cd7081892a5f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
