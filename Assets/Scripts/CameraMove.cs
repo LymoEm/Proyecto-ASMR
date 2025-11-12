@@ -7,6 +7,7 @@ public class CameraMove : MonoBehaviour
     public float Speed = 10f;
     public Vector3 offset; //Respecto al objeto a cuanto está 
     private bool cameraZoom = false;
+    public bool cameraReset = false;
 
     private Transform target;
 
@@ -18,7 +19,7 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = new(-35, 20f, 7f);
+        offset = new(-35f, 20f, 7f);
         startPosition = transform.position;
         startRotation = transform.rotation;
     }
@@ -28,14 +29,19 @@ public class CameraMove : MonoBehaviour
     {
         if (cameraZoom == true && target != null)
         {
+            cameraReset = false;
             Zoom();
+        }
+        else if(cameraReset == true)
+        {
+            ResetPosition();
         }
     }
 
-    public void setZoom(Transform actualTarget)
+    public void setZoom(Transform actualTarget, bool z)
     {
         target = actualTarget;
-        cameraZoom = true;
+        cameraZoom = z;
     }
 
     public void Zoom()
@@ -43,12 +49,14 @@ public class CameraMove : MonoBehaviour
         Vector3 NewPosition = target.position + offset;
         transform.position = Vector3.Lerp(transform.position, NewPosition, Time.deltaTime * Speed);
 
-        Quaternion NewRotation = Quaternion.LookRotation(target.position - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, NewRotation, Time.deltaTime * Speed);
+        //Quaternion NewRotation = Quaternion.LookRotation(target.position - transform.position);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, NewRotation, Time.deltaTime * Speed);
     }
 
-    public void resetPosition()
+    public void ResetPosition()
     {
-
+        Speed = 2f;
+        transform.position = Vector3.Lerp(transform.position, startPosition, Time.deltaTime * Speed);
+        transform.rotation = Quaternion.Slerp(transform.rotation, startRotation, Time.deltaTime * Speed);
     }
 }

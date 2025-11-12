@@ -1,6 +1,6 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 public class Icono1 : MonoBehaviour
 {
     public CameraMove cameraMove;
@@ -11,17 +11,20 @@ public class Icono1 : MonoBehaviour
 
     void Start()
     {
-        // Asegura que el ícono esté visible apenas inicia la escena
-        iconoActual.SetActive(true);
-        icono2.SetActive(false);
-
+        activeicon();
     }
 
     void Update()
     {
        
     }
+    public void activeicon()
+    {
+        // Asegura que el ícono esté visible apenas inicia la escena
+        iconoActual.SetActive(true);
 
+        icono2.SetActive(false);
+    }
     public void OnMouseDown()
     {
 
@@ -29,26 +32,14 @@ public class Icono1 : MonoBehaviour
 
         Debug.Log(target);
 
-        cameraMove.setZoom(target);
+        cameraMove.setZoom(target, true);
 
         //Activa el siguiente ícono
         icono2.SetActive(true);
 
         //Desactiva este ícono
         iconoActual.SetActive(false);
-
-        // Nueva posición
-        //mainCamera.transform.position = new Vector3(-13.3f, 253.5f, 254.3f);
-
-        // Nueva rotación (en ángulos Euler)
-        //mainCamera.transform.rotation = Quaternion.Euler(78.34f, -147.327f, 123.95f);
-
-        // 3. Mueve la cámara hacia el libro (seguimiento simple)
-        //mainCamera.transform.position = new Vector3(
-        //  targetLibro.position.x + 2f,
-        // targetLibro.position.y + 1.5f,
-        //targetLibro.position.z + 2f
-        //);
     }
+
 }
 
