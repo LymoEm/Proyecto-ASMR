@@ -15,7 +15,7 @@ public class ScenesManager : MonoBehaviour
     public void ChosenScenes(string name)
     {
         ChosenScene.selected = name;
-        SceneManager.LoadScene("bienvenida");
+        SceneManager.LoadScene("seleccion estudio");
     }
 
 
