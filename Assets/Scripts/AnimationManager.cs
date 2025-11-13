@@ -11,6 +11,8 @@ public class AnimationManager : MonoBehaviour
     private Animator anim;     // Animator del objeto
     public string currentAnimation;
 
+    public AudioManager audioManager;
+
     public Icono1 icono1;
     public CameraMove cameraMove;
 
@@ -19,6 +21,8 @@ public class AnimationManager : MonoBehaviour
 
     void Start()
     {
+        audioManager = GetComponent<AudioManager>();
+
         anim = GetComponent<Animator>();
         if (anim == null)
         {
@@ -54,7 +58,6 @@ public class AnimationManager : MonoBehaviour
 
     private IEnumerator WaitForAnimation()
     {
-
         yield return null;
 
         while (anim.GetCurrentAnimatorStateInfo(0).IsName("Default"))
@@ -62,6 +65,8 @@ public class AnimationManager : MonoBehaviour
             Debug.Log("here");
             yield return null;
         }
+
+        audioManager.clickToPlaySound = true;
 
         while (anim.GetCurrentAnimatorStateInfo(0).IsName(currentAnimation))
         {
@@ -71,6 +76,7 @@ public class AnimationManager : MonoBehaviour
 
         Debug.Log("Sali");
         cameraMove.setZoom(null, false);
+        audioManager.clickToPauseSound = true;
         cameraMove.cameraReset = true;
         isAnimating = false;
         icono1.activeicon();

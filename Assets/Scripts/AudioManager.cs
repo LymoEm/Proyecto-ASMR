@@ -1,0 +1,65 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Audio;
+
+public class AudioManager : MonoBehaviour
+{
+
+    public AudioSource audioSource;
+    public bool clickToPlaySound;
+    public bool clickToPauseSound;
+    public float fadeInTime = 2f;
+    public bool fadethatIn;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //Referencia al audiosource
+        audioSource = GetComponent<AudioSource>();
+        //audioSource.PlayDelayed(0.2f);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (clickToPlaySound)
+        {
+            RandomizeBeforePlaying();
+            clickToPlaySound = false;
+        }
+        else if(clickToPauseSound)
+        {
+            StopPlaying();
+            clickToPauseSound = false;
+        }
+        else if (fadethatIn)
+        {
+            StartCoroutine(FadeIn());
+            fadethatIn = false;
+        }
+    }
+
+    //Cambios aleatorios en el sonido para evitar que se canse el oido
+    void RandomizeBeforePlaying()
+    {
+        audioSource.pitch = Random.Range(.97f, 1.03f);
+        //audioSource.volume = Random.Range(.8f, 1f);
+        audioSource.Play();
+    }
+
+    void StopPlaying()
+    {
+        audioSource.Stop();
+    }
+
+    //Corutina para FadeIn y FadeOut
+    IEnumerator FadeIn()
+    {
+        for (decimal i = 0m; i <= 1; i += 0.1m)
+        {
+            audioSource.volume = (float)i;
+            yield return new WaitForSeconds(fadeInTime / 100);
+        }
+    }
+}
+
