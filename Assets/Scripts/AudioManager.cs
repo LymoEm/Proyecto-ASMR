@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-
+    public float inicio = 0f;
     public AudioSource audioSource;
     public bool clickToPlaySound;
     public bool clickToPauseSound;
@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.pitch = Random.Range(.97f, 1.03f);
         //audioSource.volume = Random.Range(.8f, 1f);
+        audioSource.time = inicio;
         audioSource.Play();
     }
 
