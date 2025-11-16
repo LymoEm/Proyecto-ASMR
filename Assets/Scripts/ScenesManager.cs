@@ -18,5 +18,15 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene("seleccion estudio");
     }
 
+    //Para volver al menú
+    public void returnMenu()
+    {
 
+
+    }
+    public void cancel()
+    {
+
+
+    }
 }
