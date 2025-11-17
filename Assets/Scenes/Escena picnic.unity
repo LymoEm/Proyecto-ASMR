@@ -522,6 +522,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1903830266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1298095271147824273, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+  m_PrefabInstance: {fileID: 2031711893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1903830268
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903830266}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09a75dd3a3fc42d4fac36f671b018a3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2009858197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+  m_PrefabInstance: {fileID: 2031711893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2009858199
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009858197}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec117f8da28adcd4b84013b08dcc3dfc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2031711893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -610,9 +662,15 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2009858199}
     - targetCorrespondingSourceObject: {fileID: 3836245683451408551, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 573425708}
+    - targetCorrespondingSourceObject: {fileID: -1298095271147824273, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1903830268}
     - targetCorrespondingSourceObject: {fileID: 4606783061208645645, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1442991384}
