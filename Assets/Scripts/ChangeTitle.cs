@@ -22,9 +22,6 @@ public class ChangeTitle : MonoBehaviour
             GetComponent<TMP_Text>().text = "Picnic";
             iconosEstudio.SetActive(false);
             iconosPicnic.SetActive(true);
-        }
-
-       
+        }  
     }
-
 }
