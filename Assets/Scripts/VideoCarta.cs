@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using System.Collections;
 
-public class VideoLibro : MonoBehaviour
+public class VideoCarta : MonoBehaviour
 {
-    public string Libro = "Libro"; 
+    public string Carta = "Carta";
 
     // Llama a este método desde un Animation Event
     public void ChangeScene()
@@ -15,14 +15,14 @@ public class VideoLibro : MonoBehaviour
 
     private IEnumerator LoadVideoScene()
     {
-        Debug.Log("[VideoLibro] Cambiando a escena: " + Libro);
+        Debug.Log("[VideoCarta] Cambiando a escena: " + Carta);
 
-   
-        AsyncOperation load = SceneManager.LoadSceneAsync(Libro);
+
+        AsyncOperation load = SceneManager.LoadSceneAsync(Carta);
 
         if (load == null)
         {
-            Debug.LogError("[VideoLibro] LoadSceneAsync devolvió NULL. Revisa que la escena esté en Build Settings.");
+            Debug.LogError("[VideoCarta] LoadSceneAsync devolvió NULL. Revisa que la escena esté en Build Settings.");
             yield break;
         }
 
@@ -36,7 +36,7 @@ public class VideoLibro : MonoBehaviour
         VideoPlayer vp = FindObjectOfType<VideoPlayer>();
         if (vp == null)
         {
-            Debug.LogError("[VideoLibro] No se encontró VideoPlayer en la escena " + Libro);
+            Debug.LogError("[VideoCarta] No se encontró VideoPlayer en la escena " + Carta);
             yield break;
         }
 
@@ -47,6 +47,7 @@ public class VideoLibro : MonoBehaviour
         if (!vp.isPlaying)
             vp.Play();
 
-        Debug.Log("[VideoLibro] Video iniciado correctamente.");
+        Debug.Log("[VideoCarta] Video iniciado correctamente.");
     }
 }
+

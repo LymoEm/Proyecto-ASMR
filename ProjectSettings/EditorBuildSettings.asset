@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Libro.unity
     guid: d24d4997e25518040b9bc265f655706d
+  - enabled: 1
+    path: Assets/Scenes/Carta.unity
+    guid: 3ebb8fb424ec3f94a8d28079bbcd2208
   m_configObjects: {}
