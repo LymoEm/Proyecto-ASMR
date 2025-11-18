@@ -5,7 +5,7 @@ using System.Collections;
 
 public class VideoLibro : MonoBehaviour
 {
-    public string Libro = "Libro"; // Nombre real de la escena del video
+    public string Libro = "Libro"; 
 
     // Llama a este método desde un Animation Event
     public void ChangeScene()
