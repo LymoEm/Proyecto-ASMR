@@ -924,143 +924,6 @@ MonoBehaviour:
   cameraMove: {fileID: 963194229}
   isAnimating: 0
   startAnimation: 0
---- !u!114 &459522196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459522187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea868ae0ac8c2e49852e23ba5bb7a48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inicio: 0.45
-  audioSource: {fileID: 0}
-  clickToPlaySound: 0
-  clickToPauseSound: 0
-  fadeInTime: 2
-  fadethatIn: 0
---- !u!114 &459522197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459522187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bypassRoomEffects: 0
-  directivityAlpha: 0
-  directivitySharpness: 1
-  listenerDirectivityAlpha: 0.492
-  listenerDirectivitySharpness: 1
-  gainDb: 0
-  nearFieldEffectEnabled: 0
-  nearFieldEffectGain: 1
-  occlusionEnabled: 0
-  occlusionIntensity: 1
-  quality: 0
---- !u!82 &459522198
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459522187}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -4966986535433470974, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 21a584a0fca79244cb9a2d822575fbb0, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 1
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &516695609
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +3014,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6295014382875937960, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d6d67b3a2459b42459098ad82728c919, type: 2}
     - target: {fileID: -1064312273474409220, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0124
@@ -3203,6 +3070,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 174.95998
       objectReference: {fileID: 0}
+    - target: {fileID: 291182673446461464, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fac80e16b6aea08428247bff41db1f58, type: 2}
+    - target: {fileID: 291182673446461464, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: fac80e16b6aea08428247bff41db1f58, type: 2}
     - target: {fileID: 308469630656021489, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 87.86512
@@ -3211,6 +3086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: prueba estudio
       objectReference: {fileID: 0}
+    - target: {fileID: 1020107374995174708, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d6d67b3a2459b42459098ad82728c919, type: 2}
     - target: {fileID: 5208759819979056824, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 5.612378e-15
@@ -3246,15 +3125,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 459522193}
-    - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 459522198}
-    - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 459522197}
-    - targetCorrespondingSourceObject: {fileID: -4364705549174052699, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 459522196}
     - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002379087}
@@ -4134,7 +4004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45dd865aa981ebc4cacda0fe56796f8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Libro: 
+  Libro: Libro
 --- !u!1 &2053364640
 GameObject:
   m_ObjectHideFlags: 0
