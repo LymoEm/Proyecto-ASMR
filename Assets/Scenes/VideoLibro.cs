@@ -7,6 +7,6 @@ public class VideoLibro : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(Libro);
+        SceneManager.LoadScene("Libro");
     }
 }
