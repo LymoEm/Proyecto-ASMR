@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena picnic.unity
     guid: 83a4c48470cff4d4f9a57f1f3bc3ffbf
+  - enabled: 1
+    path: Assets/Scenes/Libro.unity
+    guid: d24d4997e25518040b9bc265f655706d
   m_configObjects: {}
