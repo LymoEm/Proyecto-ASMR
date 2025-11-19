@@ -2559,7 +2559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
-  offset: {x: 5, y: 5, z: 5}
+  offset: {x: -35, y: 20, z: 7}
   cameraReset: 0
 --- !u!114 &963194230
 MonoBehaviour:
