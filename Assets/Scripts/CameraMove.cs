@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public float Speed = 10f;
-    public Vector3 offset; //Respecto al objeto a cuanto está 
+    public Vector3 offset = new(-35f, 20f, 7f); //Respecto al objeto a cuanto está 
     private bool cameraZoom = false;
     public bool cameraReset = false;
 
@@ -19,7 +19,7 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        offset = new(-35f, 20f, 7f);
+        //offset = new(-35f, 20f, 7f);
         startPosition = transform.position;
         startRotation = transform.rotation;
     }
