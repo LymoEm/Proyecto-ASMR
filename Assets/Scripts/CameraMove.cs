@@ -5,7 +5,8 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     public float Speed = 10f;
-    public Vector3 offset = new(-35f, 20f, 7f); //Respecto al objeto a cuanto está 
+    private Vector3 offset; //Respecto al objeto a cuanto está 
+    public Vector3 offsetprueba;
     private bool cameraZoom = false;
     public bool cameraReset = false;
 
@@ -19,7 +20,6 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //offset = new(-35f, 20f, 7f);
         startPosition = transform.position;
         startRotation = transform.rotation;
     }
@@ -32,7 +32,7 @@ public class CameraMove : MonoBehaviour
             cameraReset = false;
             Zoom();
         }
-        else if(cameraReset == true)
+        else if (cameraReset == true)
         {
             ResetPosition();
         }
@@ -42,6 +42,17 @@ public class CameraMove : MonoBehaviour
     {
         target = actualTarget;
         cameraZoom = z;
+
+        if (cameraZoom == true)
+        {
+            OffsetCameraTarget offsetTarget = target.GetComponent<OffsetCameraTarget>();
+            if (offsetTarget != null)
+                offset = offsetTarget.OffsetValue;
+            else
+                offset = new Vector3(-35f, 20f, 7f);
+            Debug.Log("Por defecto");
+        }
+
     }
 
     public void Zoom()
