@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMove: {fileID: 1327951733}
-  target: {fileID: 2009858201}
+  target: {fileID: 1903830271}
   iconoActual: {fileID: 253545341}
   icono2: {fileID: 531837866}
 --- !u!135 &253545343
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMove: {fileID: 1327951733}
-  target: {fileID: 2009858201}
+  target: {fileID: 2112657868}
   iconoActual: {fileID: 1789838315}
   icono2: {fileID: 849397681}
 --- !u!135 &1789838317
@@ -3338,6 +3338,11 @@ MonoBehaviour:
   cameraMove: {fileID: 1327951733}
   isAnimating: 0
   startAnimation: 0
+--- !u!4 &1903830271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1255051004398619799, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+  m_PrefabInstance: {fileID: 2031711893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1963009954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3406,7 @@ MonoBehaviour:
     m_NormalColor: {r: 0.26799864, g: 0.12638661, b: 0.3660378, a: 1}
     m_HighlightedColor: {r: 0.25124386, g: 0.13565682, b: 0.3283019, a: 1}
     m_PressedColor: {r: 0.26327372, g: 0.13176927, b: 0.3509434, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.2627451, g: 0.13333334, b: 0.34901962, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4166,6 +4171,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073492820}
   m_Mesh: {fileID: -7777254749344384968, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+--- !u!4 &2112657868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2923987692796397309, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+  m_PrefabInstance: {fileID: 2031711893}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
