@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.9037736, g: 0.93100744, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 85d673eed91ef28429e0fadc3e8e4273, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -2621,9 +2621,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.27384418, g: 0.17299393, b: 0.3433962, a: 1}
-    m_HighlightedColor: {r: 0.25124386, g: 0.13565682, b: 0.3283019, a: 1}
-    m_PressedColor: {r: 0.26327372, g: 0.13176927, b: 0.3509434, a: 1}
+    m_NormalColor: {r: 0.552554, g: 0.40771085, b: 0.6528301, a: 1}
+    m_HighlightedColor: {r: 0.38742098, g: 0.21050195, b: 0.509434, a: 1}
+    m_PressedColor: {r: 0.9071698, g: 0.76792455, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
