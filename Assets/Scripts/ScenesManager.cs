@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
+
     //Para bienvenida
     public void LoadSceneSelected()
     {
@@ -19,14 +20,8 @@ public class ScenesManager : MonoBehaviour
     }
 
     //Para volver al menú
-    public void returnMenu()
+    public void LoadScene(string nameScene)
     {
-
-
-    }
-    public void cancel()
-    {
-
-
+        SceneManager.LoadScene(nameScene);
     }
 }
