@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Icono1 : MonoBehaviour
+using UnityEngine.EventSystems;
+public class Icono1 : MonoBehaviour, IPointerClickHandler
 {
     public CameraMove cameraMove;
 
@@ -25,9 +26,24 @@ public class Icono1 : MonoBehaviour
 
         icono2.SetActive(false);
     }
-    public void OnMouseDown()
-    {
+    //public void OnMouseDown()
+    //{
 
+    //    Debug.Log("Bandera1");
+
+    //    Debug.Log(target);
+
+    //    cameraMove.setZoom(target, true);
+
+    //    //Activa el siguiente ícono
+    //    icono2.SetActive(true);
+
+    //    //Desactiva este ícono
+    //    iconoActual.SetActive(false);
+    //}
+
+    public void OnPointerClick(PointerEventData pointerEventData)
+    {
         Debug.Log("Bandera1");
 
         Debug.Log(target);
