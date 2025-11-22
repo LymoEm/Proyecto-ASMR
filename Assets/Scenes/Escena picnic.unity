@@ -870,7 +870,6 @@ GameObject:
   m_Component:
   - component: {fileID: 531837871}
   - component: {fileID: 531837870}
-  - component: {fileID: 531837869}
   - component: {fileID: 531837868}
   - component: {fileID: 531837867}
   m_Layer: 0
@@ -915,20 +914,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4390104
   m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
---- !u!114 &531837869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531837866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 531837866}
-  animLibro: {fileID: 1903830268}
 --- !u!212 &531837870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1536,7 +1521,6 @@ GameObject:
   m_Component:
   - component: {fileID: 829946991}
   - component: {fileID: 829946990}
-  - component: {fileID: 829946989}
   - component: {fileID: 829946988}
   - component: {fileID: 829946987}
   m_Layer: 0
@@ -1581,20 +1565,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4390104
   m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
---- !u!114 &829946989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829946986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 829946986}
-  animLibro: {fileID: 2018613164}
 --- !u!212 &829946990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1672,7 +1642,6 @@ GameObject:
   m_Component:
   - component: {fileID: 849397686}
   - component: {fileID: 849397685}
-  - component: {fileID: 849397684}
   - component: {fileID: 849397683}
   - component: {fileID: 849397682}
   m_Layer: 0
@@ -1717,20 +1686,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4390104
   m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
---- !u!114 &849397684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849397681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 849397681}
-  animLibro: {fileID: 1442991384}
 --- !u!212 &849397685
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1808,7 +1763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 951628309}
   - component: {fileID: 951628308}
-  - component: {fileID: 951628307}
   - component: {fileID: 951628306}
   - component: {fileID: 951628305}
   m_Layer: 0
@@ -1853,20 +1807,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4390104
   m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
---- !u!114 &951628307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951628304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 951628304}
-  animLibro: {fileID: 2009858199}
 --- !u!212 &951628308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2002,7 +1942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1005018133}
   - component: {fileID: 1005018132}
-  - component: {fileID: 1005018131}
   - component: {fileID: 1005018130}
   - component: {fileID: 1005018129}
   m_Layer: 0
@@ -2047,20 +1986,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 3.4390104
   m_Center: {x: -0.1, y: 0.18, z: 1.6809891}
---- !u!114 &1005018131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005018128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 1005018128}
-  animLibro: {fileID: 573425708}
 --- !u!212 &1005018132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3186,10 +3111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 3
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
 --- !u!114 &1720946160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,7 +3601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea868ae0ac8c2e49852e23ba5bb7a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inicio: 0.5
+  inicio: 0.6
   audioSource: {fileID: 0}
   clickToPlaySound: 0
   clickToPauseSound: 0
@@ -4326,7 +4251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea868ae0ac8c2e49852e23ba5bb7a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inicio: 0
+  inicio: 0.7
   audioSource: {fileID: 0}
   clickToPlaySound: 0
   clickToPauseSound: 0

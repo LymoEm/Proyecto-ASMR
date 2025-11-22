@@ -49,8 +49,11 @@ public class CameraMove : MonoBehaviour
             if (offsetTarget != null)
                 offset = offsetTarget.OffsetValue;
             else
+            {
                 offset = new Vector3(-35f, 20f, 7f);
-            Debug.Log("Por defecto");
+                Debug.Log("Por defecto");
+            }
+              
         }
 
     }
