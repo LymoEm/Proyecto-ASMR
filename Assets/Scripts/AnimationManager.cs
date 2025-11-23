@@ -19,6 +19,7 @@ public class AnimationManager : MonoBehaviour
     public bool isAnimating = false;
     public bool startAnimation = false;
 
+
     void Start()
     {
         audioManager = GetComponent<AudioManager>();
@@ -84,3 +85,5 @@ public class AnimationManager : MonoBehaviour
         yield return null;
     }
 }
+
+
