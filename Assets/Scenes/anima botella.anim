@@ -1288,8 +1288,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.3333335
+  - time: 3.3
     functionName: ResumeRadio
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 3.3333335
+    functionName: CambiarCancionAleatoria
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
