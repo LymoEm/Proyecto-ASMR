@@ -3712,6 +3712,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002379090}
+    - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002379093}
+    - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002379092}
+    - targetCorrespondingSourceObject: {fileID: -8732553792541207919, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002379091}
     - targetCorrespondingSourceObject: {fileID: 1030030053618147308, guid: 9a09f209e94e31643b33c2f88895b367, type: 3}
       insertIndex: -1
       addedObject: {fileID: 105748591}
@@ -4400,7 +4409,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1894609078}
   - component: {fileID: 1894609077}
-  - component: {fileID: 1894609079}
   - component: {fileID: 1894609080}
   - component: {fileID: 1894609081}
   m_Layer: 0
@@ -4477,20 +4485,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
---- !u!114 &1894609079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894609076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddffec5fd91cdc049bf5c768ddcc78cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iconoLibro: {fileID: 1894609076}
-  animLibro: {fileID: 2002379087}
 --- !u!135 &1894609080
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4714,6 +4708,143 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Libro: Libro
+--- !u!114 &2002379091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002379085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5e1719799ca4f9b9f5db81449517ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bypassRoomEffects: 0
+  directivityAlpha: 0
+  directivitySharpness: 1
+  listenerDirectivityAlpha: 0.492
+  listenerDirectivitySharpness: 1
+  gainDb: 0
+  nearFieldEffectEnabled: 0
+  nearFieldEffectGain: 1
+  occlusionEnabled: 0
+  occlusionIntensity: 1
+  quality: 0
+--- !u!82 &2002379092
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002379085}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -4966986535433470974, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 079f5532b6410624eb391ea85872cd22, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 1
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2002379093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002379085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea868ae0ac8c2e49852e23ba5bb7a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inicio: 0.35
+  audioSource: {fileID: 0}
+  clickToPlaySound: 0
+  clickToPauseSound: 0
+  fadeInTime: 2
+  fadethatIn: 0
 --- !u!1 &2023229023
 GameObject:
   m_ObjectHideFlags: 0
