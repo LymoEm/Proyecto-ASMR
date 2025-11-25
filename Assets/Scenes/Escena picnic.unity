@@ -1780,7 +1780,7 @@ GameObject:
   - component: {fileID: 951628309}
   - component: {fileID: 951628308}
   - component: {fileID: 951628306}
-  - component: {fileID: 951628305}
+  - component: {fileID: 951628310}
   m_Layer: 0
   m_Name: icono vaso vidrio
   m_TagString: Untagged
@@ -1788,20 +1788,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &951628305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951628304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 2009858200}
-  icono2: {fileID: 951628304}
 --- !u!135 &951628306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1890,6 +1876,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 74.206, z: 5.351}
+--- !u!114 &951628310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951628304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce002ac7d2616164a8c906f877e194f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2009858207}
+  icono2: {fileID: 951628304}
 --- !u!1 &973564929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4026,24 +4026,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2009858200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009858197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentAnimation: anim vidrio
-  audioManager: {fileID: 0}
-  icono1: {fileID: 2022653852}
-  cameraMove: {fileID: 1327951733}
-  isAnimating: 0
-  startAnimation: 0
 --- !u!4 &2009858201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3715336388864724635, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
@@ -4215,6 +4197,24 @@ MonoBehaviour:
   canciones:
   - {fileID: 8300000, guid: 159788e900f9f4944be9d96d62fb7697, type: 3}
   - {fileID: 8300000, guid: 159788e900f9f4944be9d96d62fb7697, type: 3}
+--- !u!114 &2009858207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009858197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c81564a420e25e4abe270dd3002d6d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAnimation: ani vaso vidrio
+  audioManager: {fileID: 0}
+  icono1: {fileID: 0}
+  cameraMove: {fileID: 1327951733}
+  isAnimating: 0
+  startAnimation: 0
 --- !u!1 &2018613162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb63cd6f4ab9d884b9dfae000f04ffda, type: 3}
@@ -4441,7 +4441,7 @@ GameObject:
   - component: {fileID: 2022653855}
   - component: {fileID: 2022653854}
   - component: {fileID: 2022653853}
-  - component: {fileID: 2022653852}
+  - component: {fileID: 2022653856}
   m_Layer: 0
   m_Name: 'icono 1 '
   m_TagString: Untagged
@@ -4449,22 +4449,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2022653852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022653851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e91a7a9db2cd994c80d9638d9fabc30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraMove: {fileID: 1327951733}
-  target: {fileID: 2009858201}
-  iconoActual: {fileID: 2022653851}
-  icono2: {fileID: 951628304}
 --- !u!135 &2022653853
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4553,6 +4537,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 2.991, y: 77.264, z: 1.714}
+--- !u!114 &2022653856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022653851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e91a7a9db2cd994c80d9638d9fabc30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraMove: {fileID: 1327951733}
+  target: {fileID: 2009858201}
+  iconoActual: {fileID: 2022653851}
+  icono2: {fileID: 951628304}
 --- !u!1001 &2031711893
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4639,15 +4639,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5712823828473676406, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 9.119744e-16
+      value: -67.418724
       objectReference: {fileID: 0}
     - target: {fileID: -5712823828473676406, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -119.53807
+      value: 178.49998
       objectReference: {fileID: 0}
     - target: {fileID: -5712823828473676406, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.4592514e-15
+      value: 3.212162
       objectReference: {fileID: 0}
     - target: {fileID: -5527861033122528743, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4852,9 +4852,6 @@ PrefabInstance:
       addedObject: {fileID: 2009858199}
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2009858200}
-    - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2009858204}
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
@@ -4868,6 +4865,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2009858206}
+    - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2009858207}
     - targetCorrespondingSourceObject: {fileID: 3836245683451408551, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 573425708}

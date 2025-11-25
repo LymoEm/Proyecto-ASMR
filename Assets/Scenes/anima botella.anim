@@ -1295,7 +1295,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.3333335
+  - time: 3.3333333
     functionName: CambiarCancionAleatoria
     data: 
     objectReferenceParameter: {fileID: 0}

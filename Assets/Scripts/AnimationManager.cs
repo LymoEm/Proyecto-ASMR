@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEditor;
@@ -49,7 +49,7 @@ public class AnimationManager : MonoBehaviour
         startAnimation = false;
         isAnimating = true;
 
-        // Reproduce la animaci�n
+        // Reproduce la animación
 
         anim.SetTrigger("PlayAnim");
 

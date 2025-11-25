@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: anim vidrio
+  m_Name: ani vaso vidrio
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -1837,7 +1837,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 12.958333
+    m_StopTime: 12.916667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -11831,7 +11831,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 12.958333
+  - time: 12.916667
     functionName: CambiarCancionAleatoria
     data: 
     objectReferenceParameter: {fileID: 0}
