@@ -4211,7 +4211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentAnimation: ani vaso vidrio
   audioManager: {fileID: 0}
-  icono1: {fileID: 0}
+  icono1: {fileID: 2022653856}
   cameraMove: {fileID: 1327951733}
   isAnimating: 0
   startAnimation: 0
@@ -4852,6 +4852,9 @@ PrefabInstance:
       addedObject: {fileID: 2009858199}
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 2009858207}
+    - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 2009858204}
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
@@ -4865,9 +4868,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2009858206}
-    - targetCorrespondingSourceObject: {fileID: -4746636875757594836, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2009858207}
     - targetCorrespondingSourceObject: {fileID: 3836245683451408551, guid: d653e1433c1280b419a0712d15d8219f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 573425708}
